@@ -27,9 +27,11 @@ body {
   text-decoration: none;
 }
 
+.language-menu { display: flex; flex-wrap: wrap; gap: 8px; }
+
 .rule-ink { border: 0; border-top: 2px solid var(--ink); margin: 18px 0 34px; }
 
-.btn, .chip, .theme-toggle, .lang-toggle, .side-tab {
+.btn, .chip, .theme-toggle, .lang-toggle, .lang-option, .side-tab {
   border: 2px solid var(--ink);
   background: transparent;
   color: var(--ink);
@@ -39,5 +41,7 @@ body {
 }
 
 .btn-primary, .chip.is-active, .side-tab.is-active { background: var(--red); color: #fff6dd; }
+
+.lang-option.is-active { background: var(--blue); color: #fff6dd; }
 
 .eyebrow { color: var(--muted); font-size: 12px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }

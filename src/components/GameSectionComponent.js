@@ -5,14 +5,21 @@ import { DraftPitchComponent } from './DraftPitchComponent.js';
 import { SidePanelComponent } from './SidePanelComponent.js';
 
 export class GameSectionComponent extends RenderableComponent {
+  #dictionary;
+
+  constructor(dictionary) {
+    super();
+    this.#dictionary = dictionary;
+  }
+
   render() {
     return this.createElementFromMarkup(`<section id="play" class="home-game-section">
-      <div class="game-section-head"><span class="eyebrow">Draft zone / Start now</span>
-      <h2>Play the 16-0 game now</h2><p>Choose a mode, lock in a line shape, and start a fast hockey draft game.</p></div>
+      <div class="game-section-head"><span class="eyebrow">${this.#dictionary.game.eyebrow}</span>
+      <h2>${this.#dictionary.game.title}</h2><p>${this.#dictionary.game.copy}</p></div>
       <main><div class="draft-layout"><div class="col-roll">
-      ${new SetupPanelComponent().render().outerHTML}${new RollPanelComponent().render().outerHTML}
+      ${new SetupPanelComponent(this.#dictionary).render().outerHTML}${new RollPanelComponent(this.#dictionary).render().outerHTML}
       </div><div class="col-pitch">${new DraftPitchComponent().render().outerHTML}</div>
-      ${new SidePanelComponent().render().outerHTML}</div></main>
+      ${new SidePanelComponent(this.#dictionary).render().outerHTML}</div></main>
     </section>`);
   }
 }

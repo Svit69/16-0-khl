@@ -1,10 +1,17 @@
 import { RenderableComponent } from './RenderableComponent.js';
 
 export class RollPanelComponent extends RenderableComponent {
+  #dictionary;
+
+  constructor(dictionary) {
+    super();
+    this.#dictionary = dictionary;
+  }
+
   render() {
     return this.createElementFromMarkup(`<section class="roll-panel">
-      <div class="roll-idle"><p>Roll to draw a nation and hockey season</p></div>
-      <button class="btn btn-primary roll-btn" type="button">Roll 🎲</button>
+      <div class="roll-idle"><p>${this.#dictionary.roll.idle}</p></div>
+      <button class="btn btn-primary roll-btn" type="button">${this.#dictionary.roll.button}</button>
     </section>`);
   }
 }
