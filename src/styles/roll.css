@@ -1,0 +1,45 @@
+.roll-panel.is-revealed {
+  background: linear-gradient(180deg, rgba(234, 248, 255, .88), rgba(255, 246, 221, .92));
+}
+
+.draw-card { text-align: left; }
+
+.draw-card h3 {
+  font: 900 34px/.95 var(--serif);
+  margin: 8px 0;
+  text-transform: uppercase;
+}
+
+.draw-red h3 { color: var(--red); }
+.draw-navy h3 { color: var(--blue); }
+.draw-gold h3 { color: #9b6a10; }
+
+.candidate-grid {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.candidate-card {
+  align-items: center;
+  background: #fff6dd;
+  border: 2px solid var(--ink);
+  color: var(--ink);
+  cursor: pointer;
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 42px 1fr;
+  padding: 10px;
+  text-align: left;
+}
+
+.candidate-position {
+  background: var(--blue);
+  color: #fff6dd;
+  font-weight: 900;
+  grid-row: span 3;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.candidate-card strong { color: var(--red); }

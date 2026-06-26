@@ -9,16 +9,12 @@ export class DraftGameApplication {
   #currentRosterIndex = 0;
   #localeCode = 'ru';
   #metadataService = new DocumentMetadataService();
-  constructor(hostElement) {
-    this.#hostElement = hostElement;
-  }
+  constructor(hostElement) { this.#hostElement = hostElement; }
   initializeApplication() {
     this.renderLocalizedPage();
     this.registerInteractiveControls();
   }
-  registerInteractiveControls() {
-    this.#hostElement.addEventListener('click', (event) => this.handleApplicationClick(event));
-  }
+  registerInteractiveControls() { this.#hostElement.addEventListener('click', (event) => this.handleApplicationClick(event)); }
   handleApplicationClick(event) {
     if (event.target.matches('.chip')) this.activateSelectedChip(event.target);
     if (event.target.matches('.roll-btn')) this.displayNextDraftRoster();
@@ -36,9 +32,11 @@ export class DraftGameApplication {
   }
   displayNextDraftRoster() {
     const roster = draftRosters[this.#currentRosterIndex % draftRosters.length];
-    const formatter = new RosterResultFormatter(this.#localeCode);
+    const formatter = new RosterResultFormatter(getLocaleDictionary(this.#localeCode));
     this.#currentRosterIndex += 1;
-    this.#hostElement.querySelector('.roll-idle').innerHTML = formatter.createRosterResultMarkup(roster);
+    const target = this.#hostElement.querySelector('.roll-state');
+    target.closest('.roll-panel').classList.add('is-revealed');
+    target.innerHTML = formatter.createRosterResultMarkup(roster);
   }
   changeApplicationLocale(localeCode) {
     this.#localeCode = localeCode;

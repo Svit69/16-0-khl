@@ -1,19 +1,27 @@
 export class RosterResultFormatter {
-  #localeCode;
+  #dictionary;
 
-  constructor(localeCode) {
-    this.#localeCode = localeCode;
+  constructor(dictionary) {
+    this.#dictionary = dictionary;
   }
 
   createRosterResultMarkup(roster) {
-    return `<p><b>${this.getCountryName(roster)} ${roster[2]}</b><br>${roster[3]} · ${this.getRoleName(roster)} · ${roster[6]}</p>`;
+    return `<article class="draw-card draw-${roster.accent}">
+      <span class="eyebrow">${this.#dictionary.roll.draw}</span>
+      <h3>${roster.country[this.#dictionary.code]} ${roster.season}</h3>
+      <p>${this.#dictionary.roll.choose}</p><div class="candidate-grid">${this.renderCandidates(roster)}</div>
+    </article>`;
   }
 
-  getCountryName(roster) {
-    return this.#localeCode === 'ru' ? roster[0] : roster[1];
+  renderCandidates(roster) {
+    return roster.candidates.map((candidate) => `<button class="candidate-card" type="button">
+      <span class="candidate-position">${candidate[1]}</span><b>${candidate[0]}</b>
+      <small>${this.#dictionary.roll.role}: ${this.getLocalizedRole(candidate)}</small>
+      <strong>${this.#dictionary.roll.rating} ${candidate[4]}</strong>
+    </button>`).join('');
   }
 
-  getRoleName(roster) {
-    return this.#localeCode === 'ru' ? roster[4] : roster[5];
+  getLocalizedRole(candidate) {
+    return this.#dictionary.code === 'ru' ? candidate[2] : candidate[3];
   }
 }
