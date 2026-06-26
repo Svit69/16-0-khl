@@ -1,0 +1,48 @@
+.home-game-section, .seo-home, .site-footer {
+  padding: clamp(34px, 6vw, 76px) clamp(18px, 4vw, 56px);
+}
+
+.game-section-head {
+  margin: 0 auto 26px;
+  max-width: 860px;
+  text-align: center;
+}
+
+.game-section-head h2, .seo-section h2 {
+  font: 900 clamp(34px, 5vw, 70px)/.9 var(--serif);
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.draft-layout {
+  display: grid;
+  grid-template-columns: minmax(240px, 330px) minmax(330px, 1fr) minmax(220px, 320px);
+  gap: 20px;
+}
+
+.play-setup, .roll-panel, .side-panel {
+  border: 3px solid var(--ink);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.roll-panel { margin-top: 18px; text-align: center; }
+
+.roll-idle {
+  align-items: center;
+  border: 2px dashed var(--line);
+  display: grid;
+  min-height: 130px;
+  place-items: center;
+}
+
+.roll-btn { margin-top: 14px; width: 100%; }
+
+.leaderboard-iframe {
+  align-items: center;
+  border: 2px dashed var(--line);
+  display: grid;
+  min-height: 420px;
+  padding: 20px;
+  text-align: center;
+}

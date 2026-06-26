@@ -1,0 +1,46 @@
+.home-preview, .pitch {
+  filter: drop-shadow(var(--shadow));
+}
+
+.home-pitch, .pitch {
+  background: linear-gradient(135deg, #2f7544, #154d32);
+  border: 4px solid var(--ink);
+  min-height: 580px;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-pitch { transform: rotate(-1.5deg); }
+
+.pitch-markings {
+  inset: 12px;
+  position: absolute;
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
+}
+
+.pitch-markings * {
+  fill: none;
+  stroke: rgba(255, 255, 255, .7);
+  stroke-width: 2;
+}
+
+.pitch-markings .mk-fill { fill: rgba(255, 255, 255, .7); }
+
+.hp-disc, .disc {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.hp-c, .disc-circle {
+  align-items: center;
+  background: #fff6dd;
+  border: 3px solid var(--ink);
+  border-radius: 50%;
+  display: grid;
+  height: 54px;
+  place-items: center;
+  width: 54px;
+}
+
+.hp-n { color: #fff6dd; display: block; font-weight: 900; text-align: center; text-shadow: 1px 1px 0 #000; }

@@ -1,0 +1,21 @@
+:root {
+  --paper: #efe2bd;
+  --ink: #21180f;
+  --muted: #6b5434;
+  --red: #b82921;
+  --blue: #123e5d;
+  --green: #356b3f;
+  --gold: #d9a441;
+  --line: rgba(33, 24, 15, .28);
+  --shadow: 0 22px 70px rgba(33, 24, 15, .22);
+  --serif: Georgia, 'Times New Roman', serif;
+  --sans: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+}
+
+.theme-night {
+  --paper: #16130f;
+  --ink: #f4e8c8;
+  --muted: #c5a978;
+  --line: rgba(244, 232, 200, .25);
+  --shadow: 0 22px 70px rgba(0, 0, 0, .45);
+}

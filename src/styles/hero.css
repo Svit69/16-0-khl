@@ -1,0 +1,42 @@
+.home-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 520px);
+  gap: clamp(24px, 5vw, 74px);
+  align-items: center;
+}
+
+.home-headline {
+  font: 900 clamp(54px, 8vw, 118px)/.86 var(--serif);
+  letter-spacing: 0;
+  margin: 18px 0;
+  text-transform: uppercase;
+}
+
+.home-mark { margin-top: 18px; }
+
+.mark70 {
+  display: inline-flex;
+  gap: .08em;
+  font: 900 clamp(76px, 12vw, 180px)/.78 var(--serif);
+  color: var(--red);
+  text-shadow: 3px 3px 0 var(--ink);
+}
+
+.home-sub {
+  font: 500 19px/1.55 var(--sans);
+  max-width: 720px;
+}
+
+.home-ctas, .modes-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.home-modes { margin-top: 18px; }
+
+.modes-label { display: block; margin-bottom: 8px; }
+
+.modes-hint { color: var(--muted); display: block; margin-top: 8px; }
+
+.home-foot { padding: 24px 0 0; text-align: center; }

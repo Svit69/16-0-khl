@@ -1,0 +1,50 @@
+.seo-inner {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.seo-section {
+  border-top: 2px solid var(--line);
+  padding: clamp(28px, 5vw, 58px) 0;
+}
+
+.seo-media-row {
+  align-items: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
+  gap: 36px;
+}
+
+.seo-copy p, .seo-section p {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.seo-figure {
+  margin: 0;
+}
+
+.seo-figure img {
+  border: 4px solid var(--ink);
+  box-shadow: var(--shadow);
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.seo-figure figcaption {
+  color: var(--muted);
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.site-footer {
+  border-top: 3px solid var(--ink);
+}
+
+.footer-links a, .kofi-btn {
+  color: var(--ink);
+  font-weight: 900;
+  margin-left: 12px;
+}
