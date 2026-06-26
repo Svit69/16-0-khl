@@ -13,9 +13,9 @@ export class HomePageComponent extends RenderableComponent {
         ${new HeaderComponent().render().outerHTML}<hr class="rule-ink">
         <div class="home-grid">${new HeroComponent().render().outerHTML}
         ${new HomePreviewComponent().render().outerHTML}</div>
-        <footer class="home-foot"><div class="foot-counts"><span class="num">46</span>
-        nations<span class="foot-dot">·</span><span class="num">177</span> squads
-        <span class="foot-dot">·</span><span class="num">4.009</span> players</div></footer>
+        <footer class="home-foot"><div class="foot-counts"><span class="num">32</span>
+        nations<span class="foot-dot">·</span><span class="num">128</span> rosters
+        <span class="foot-dot">·</span><span class="num">2.560</span> players</div></footer>
       </section>${new GameSectionComponent().render().outerHTML}
       ${new GuideSectionComponent().render().outerHTML}${new FooterComponent().render().outerHTML}
     </div>`);

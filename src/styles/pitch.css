@@ -3,7 +3,7 @@
 }
 
 .home-pitch, .pitch {
-  background: linear-gradient(135deg, #2f7544, #154d32);
+  background: linear-gradient(135deg, #eaf8ff, #b9ddf0);
   border: 4px solid var(--ink);
   min-height: 580px;
   position: relative;
@@ -21,11 +21,11 @@
 
 .pitch-markings * {
   fill: none;
-  stroke: rgba(255, 255, 255, .7);
+  stroke: rgba(18, 62, 93, .72);
   stroke-width: 2;
 }
 
-.pitch-markings .mk-fill { fill: rgba(255, 255, 255, .7); }
+.pitch-markings .mk-fill { fill: rgba(184, 41, 33, .85); }
 
 .hp-disc, .disc {
   position: absolute;
@@ -43,4 +43,4 @@
   width: 54px;
 }
 
-.hp-n { color: #fff6dd; display: block; font-weight: 900; text-align: center; text-shadow: 1px 1px 0 #000; }
+.hp-n { color: var(--blue); display: block; font-weight: 900; text-align: center; text-shadow: 1px 1px 0 #fff; }

@@ -5,7 +5,7 @@ import { legends } from '../data/legends.js';
 export class HomePreviewComponent extends RenderableComponent {
   render() {
     return this.createElementFromMarkup(`<aside class="home-preview">
-      <div class="home-pitch" aria-label="Dream XI: world football legends">
+      <div class="home-pitch" aria-label="Dream line: world hockey legends">
         ${PitchMarkings.renderMarkup()}${this.renderLegendDiscs()}
       </div>
     </aside>`);

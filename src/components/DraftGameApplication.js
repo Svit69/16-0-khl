@@ -1,9 +1,9 @@
 import { HomePageComponent } from './HomePageComponent.js';
-import { draftSquads } from '../data/draftSquads.js';
+import { draftRosters } from '../data/draftRosters.js';
 
 export class DraftGameApplication {
   #hostElement;
-  #currentSquadIndex = 0;
+  #currentRosterIndex = 0;
 
   constructor(hostElement) {
     this.#hostElement = hostElement;
@@ -17,7 +17,7 @@ export class DraftGameApplication {
   registerInteractiveControls() {
     this.#hostElement.addEventListener('click', (event) => {
       if (event.target.matches('.chip')) this.activateSelectedChip(event.target);
-      if (event.target.matches('.roll-btn')) this.displayNextDraftSquad();
+      if (event.target.matches('.roll-btn')) this.displayNextDraftRoster();
       if (event.target.matches('.theme-toggle, .theme-toggle *')) this.toggleVisualTheme();
     });
   }
@@ -27,10 +27,10 @@ export class DraftGameApplication {
     button.classList.add('is-active');
   }
 
-  displayNextDraftSquad() {
-    const squad = draftSquads[this.#currentSquadIndex % draftSquads.length];
-    this.#currentSquadIndex += 1;
-    this.#hostElement.querySelector('.roll-idle').innerHTML = `<p><b>${squad[0]} ${squad[1]}</b><br>${squad[2]} · ${squad[3]} · ${squad[4]}</p>`;
+  displayNextDraftRoster() {
+    const roster = draftRosters[this.#currentRosterIndex % draftRosters.length];
+    this.#currentRosterIndex += 1;
+    this.#hostElement.querySelector('.roll-idle').innerHTML = `<p><b>${roster[0]} ${roster[1]}</b><br>${roster[2]} · ${roster[3]} · ${roster[4]}</p>`;
   }
 
   toggleVisualTheme() {

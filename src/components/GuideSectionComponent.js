@@ -3,7 +3,7 @@ import { guideSections } from '../data/guideContent.js';
 
 export class GuideSectionComponent extends RenderableComponent {
   render() {
-    return this.createElementFromMarkup(`<section class="seo-home" aria-label="7a0 game guide">
+    return this.createElementFromMarkup(`<section class="seo-home" aria-label="16-0 game guide">
       <div class="seo-inner">${this.renderIntro()}${this.renderGuideCards()}</div>
     </section>`);
   }
@@ -12,9 +12,9 @@ export class GuideSectionComponent extends RenderableComponent {
     return `<section class="seo-section seo-media-row"><div class="seo-copy">
       <span class="eyebrow">${guideSections[0][0]}</span><h2>${guideSections[0][1]}</h2>
       <p>${guideSections[0][2]}</p></div><figure class="seo-figure">
-      <img src="/7-0-game.webp" width="720" height="960" loading="lazy"
-      alt="7a0 board with a football pitch, dice, and World Cup draft cards">
-      <figcaption>Draw a squad, protect the formation, and chase a 7-0 result.</figcaption></figure></section>`;
+      <img src="/16-0-hockey.png" width="720" height="960" loading="lazy"
+      alt="16-0 board with an ice rink, puck, dice, and hockey draft cards">
+      <figcaption>Draw a roster, protect the line, and chase a 16-0 result.</figcaption></figure></section>`;
   }
 
   renderGuideCards() {
