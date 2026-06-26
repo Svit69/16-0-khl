@@ -1,8 +1,8 @@
 export const draftRosters = [
-  { country: { ru: 'СССР', en: 'USSR' }, season: '1981', accent: 'red', candidates: [['Tretiak', 'G', 'Вратарь', 'Goalie', 99], ['Fetisov', 'LD', 'Защитник', 'Defenseman', 97], ['Makarov', 'RW', 'Правый край', 'Right wing', 96]] },
-  { country: { ru: 'Канада', en: 'Canada' }, season: '1987', accent: 'navy', candidates: [['Gretzky', 'C', 'Центр', 'Center', 99], ['Lemieux', 'RW', 'Правый край', 'Right wing', 98], ['Bourque', 'RD', 'Защитник', 'Defenseman', 96]] },
-  { country: { ru: 'Россия', en: 'Russia' }, season: '2008', accent: 'red', candidates: [['Ovechkin', 'LW', 'Левый край', 'Left wing', 98], ['Datsyuk', 'C', 'Центр', 'Center', 96], ['Kovalchuk', 'RW', 'Правый край', 'Right wing', 95]] },
-  { country: { ru: 'Швеция', en: 'Sweden' }, season: '2006', accent: 'gold', candidates: [['Lidström', 'LD', 'Защитник', 'Defenseman', 97], ['Forsberg', 'C', 'Центр', 'Center', 96], ['Sundin', 'C', 'Центр', 'Center', 94]] },
-  { country: { ru: 'Финляндия', en: 'Finland' }, season: '1995', accent: 'navy', candidates: [['Selänne', 'RW', 'Правый край', 'Right wing', 96], ['Kurri', 'RW', 'Правый край', 'Right wing', 95], ['Kiprusoff', 'G', 'Вратарь', 'Goalie', 94]] },
-  { country: { ru: 'Чехия', en: 'Czechia' }, season: '1998', accent: 'red', candidates: [['Jágr', 'RW', 'Правый край', 'Right wing', 97], ['Hašek', 'G', 'Вратарь', 'Goalie', 98], ['Reichel', 'C', 'Центр', 'Center', 92]] },
+  { country: { ru: 'ЦСКА', en: 'CSKA' }, season: '2019', accent: 'red', candidates: [['Сорокин', 'G', 'Вратарь', 'Goalie', 98], ['Нестеров', 'LD', 'Защитник', 'Defenseman', 94], ['Капризов', 'LW', 'Левый край', 'Left wing', 97]] },
+  { country: { ru: 'Ак Барс', en: 'Ak Bars' }, season: '2018', accent: 'navy', candidates: [['Гарипов', 'G', 'Вратарь', 'Goalie', 94], ['Лукоянов', 'RW', 'Правый край', 'Right wing', 91], ['Азеведо', 'C', 'Центр', 'Center', 95]] },
+  { country: { ru: 'Металлург', en: 'Metallurg' }, season: '2016', accent: 'gold', candidates: [['Кошечкин', 'G', 'Вратарь', 'Goalie', 96], ['Мозякин', 'RW', 'Правый край', 'Right wing', 99], ['Зарипов', 'LW', 'Левый край', 'Left wing', 96]] },
+  { country: { ru: 'СКА', en: 'SKA' }, season: '2017', accent: 'navy', candidates: [['Шипачев', 'C', 'Центр', 'Center', 97], ['Гусев', 'LW', 'Левый край', 'Left wing', 96], ['Дадонов', 'RW', 'Правый край', 'Right wing', 95]] },
+  { country: { ru: 'Авангард', en: 'Avangard' }, season: '2021', accent: 'red', candidates: [['Грубец', 'G', 'Вратарь', 'Goalie', 95], ['Толчинский', 'RW', 'Правый край', 'Right wing', 96], ['Войнов', 'RD', 'Защитник', 'Defenseman', 94]] },
+  { country: { ru: 'Динамо Москва', en: 'Dynamo Moscow' }, season: '2013', accent: 'navy', candidates: [['Еременко', 'G', 'Вратарь', 'Goalie', 97], ['Горовиков', 'C', 'Центр', 'Center', 93], ['Кокарев', 'LW', 'Левый край', 'Left wing', 92]] },
 ];

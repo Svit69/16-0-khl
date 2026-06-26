@@ -14,7 +14,8 @@ export class RosterResultFormatter {
   }
 
   renderCandidates(roster) {
-    return roster.candidates.map((candidate) => `<button class="candidate-card" type="button">
+    return roster.candidates.map((candidate) => `<button class="candidate-card" type="button"
+      data-name="${candidate[0]}" data-position="${candidate[1]}" data-rating="${candidate[4]}">
       <span class="candidate-position">${candidate[1]}</span><b>${candidate[0]}</b>
       <small>${this.#dictionary.roll.role}: ${this.getLocalizedRole(candidate)}</small>
       <strong>${this.#dictionary.roll.rating} ${candidate[4]}</strong>

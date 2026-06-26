@@ -17,7 +17,7 @@ export class DraftPitchComponent extends RenderableComponent {
   }
 
   renderSlots() {
-    return this.#slots.map(([role, left, top]) => `<button type="button"
+    return this.#slots.map(([role, left, top]) => `<button type="button" data-position="${role}"
       class="disc slot-empty" style="left:${left}%;top:${top}%">
       <span class="disc-circle">${role}</span></button>`).join('');
   }
